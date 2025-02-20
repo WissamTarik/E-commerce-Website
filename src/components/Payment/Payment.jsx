@@ -47,7 +47,7 @@ async function handleCashPayment(apiObject) {
 async function handleOnlinePayment(apiObject) {
   setIsLoading(true)
    try {
-    const {data}=await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=https://e-commerce-website-theta-tan.vercel.app`,apiObject,{
+    const {data}=await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=http://e-commerce-website-theta-tan.vercel.app`,apiObject,{
       headers:{
         token
       }
